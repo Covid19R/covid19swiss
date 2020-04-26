@@ -10127,3 +10127,11 @@
 2020-04-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","current_vent",38
 2020-04-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","total_recovered",NA
 2020-04-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","total_death",114
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","total_tested",NA
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","total_confirmed",72
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","new_hosp",NA
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","current_hosp",9
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","current_icu",2
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","current_vent",NA
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","total_recovered",NA
+2020-04-26,"SH","Canton of Switzerland","CH.SH","gn_a1_code","total_death",5
