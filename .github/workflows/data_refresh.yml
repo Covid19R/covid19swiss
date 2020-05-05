@@ -18,8 +18,8 @@ jobs:
           token: ${{ github.token }}
           clean: 'true'
           fetch-depth: '1'
-      - name: Install jq
-        run: brew install jq 
+      - name: Install deoendencies
+        run: brew install gdal
       - name: Install dependencies
         run: Rscript -e "install.packages(c('remotes', 'rcmdcheck', 'dplyr', 'tidyr', 'rnaturalearth', 'sp', 'rgeos'))" -e "remotes::install_deps(dependencies = TRUE)"
       - name: Install geo packages
