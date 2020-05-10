@@ -12943,6 +12943,14 @@
 2020-05-09,"FR","Canton of Switzerland","CH.FR","gn_a1_code","current_vent",NA
 2020-05-09,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_recovered",134
 2020-05-09,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_death",82
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_tested",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_confirmed",713
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","new_hosp",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_hosp",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_icu",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_vent",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_recovered",NA
+2020-05-09,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_death",19
 2020-05-09,"NE","Canton of Switzerland","CH.NE","gn_a1_code","total_tested",NA
 2020-05-09,"NE","Canton of Switzerland","CH.NE","gn_a1_code","total_confirmed",NA
 2020-05-09,"NE","Canton of Switzerland","CH.NE","gn_a1_code","new_hosp",NA
