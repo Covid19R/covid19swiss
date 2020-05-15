@@ -13959,6 +13959,14 @@
 2020-05-14,"BS","Canton of Switzerland","CH.BS","gn_a1_code","current_vent",NA
 2020-05-14,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_recovered",895
 2020-05-14,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_death",50
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_tested",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_confirmed",82
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","new_hosp",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_hosp",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_icu",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_vent",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_recovered",NA
+2020-05-14,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_death",NA
 2020-05-14,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_tested",NA
 2020-05-14,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_confirmed",1143
 2020-05-14,"FR","Canton of Switzerland","CH.FR","gn_a1_code","new_hosp",NA
