@@ -163,7 +163,7 @@
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",2
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-02-29,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -243,7 +243,7 @@
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",2
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-03-01,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -347,7 +347,7 @@
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",2
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-03-02,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -451,7 +451,7 @@
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",2
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-03-03,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -563,7 +563,7 @@
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",2
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-03-04,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -699,7 +699,7 @@
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_confirmed",6
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","new_hosp",NA
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_hosp",1
-2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",NA
+2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",0
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",NA
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",NA
 2020-03-05,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",NA
@@ -4246,7 +4246,7 @@
 2020-03-28,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_icu",14
 2020-03-28,"BL","Canton of Switzerland","CH.BL","gn_a1_code","current_vent",13
 2020-03-28,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_recovered",100
-2020-03-28,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",6
+2020-03-28,"BL","Canton of Switzerland","CH.BL","gn_a1_code","total_death",5
 2020-03-28,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_tested",NA
 2020-03-28,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_confirmed",569
 2020-03-28,"BS","Canton of Switzerland","CH.BS","gn_a1_code","new_hosp",NA
@@ -14011,7 +14011,7 @@
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_confirmed",202
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","new_hosp",NA
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_hosp",2
-2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_icu",2
+2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_icu",1
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_vent",NA
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_recovered",NA
 2020-05-14,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_death",7
@@ -14175,6 +14175,14 @@
 2020-05-15,"BS","Canton of Switzerland","CH.BS","gn_a1_code","current_vent",NA
 2020-05-15,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_recovered",897
 2020-05-15,"BS","Canton of Switzerland","CH.BS","gn_a1_code","total_death",50
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_tested",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_confirmed",82
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","new_hosp",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_hosp",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_icu",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","current_vent",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_recovered",NA
+2020-05-15,"FL","Principality of Liechtenstein",NA,"gn_a1_code","total_death",1
 2020-05-15,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_tested",NA
 2020-05-15,"FR","Canton of Switzerland","CH.FR","gn_a1_code","total_confirmed",1145
 2020-05-15,"FR","Canton of Switzerland","CH.FR","gn_a1_code","new_hosp",NA
@@ -14199,6 +14207,14 @@
 2020-05-15,"GL","Canton of Switzerland","CH.GL","gn_a1_code","current_vent",NA
 2020-05-15,"GL","Canton of Switzerland","CH.GL","gn_a1_code","total_recovered",NA
 2020-05-15,"GL","Canton of Switzerland","CH.GL","gn_a1_code","total_death",12
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_tested",NA
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_confirmed",202
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","new_hosp",NA
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_hosp",2
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_icu",1
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","current_vent",NA
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_recovered",NA
+2020-05-15,"JU","Canton of Switzerland","CH.JU","gn_a1_code","total_death",7
 2020-05-15,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_tested",NA
 2020-05-15,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_confirmed",715
 2020-05-15,"LU","Canton of Switzerland","CH.LU","gn_a1_code","new_hosp",NA
