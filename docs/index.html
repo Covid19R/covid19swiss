@@ -166,19 +166,19 @@
 <span id="cb4-2"><a href="#cb4-2"></a></span>
 <span id="cb4-3"><a href="#cb4-3"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(covid19swiss)</span>
 <span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt;         date location         location_type location_code location_code_type</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt; 1 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt; 2 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#&gt; 3 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt; 4 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co">#&gt; 5 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="co">#&gt; 6 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt; 1 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt; 2 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#&gt; 3 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt; 4 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">#&gt; 5 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">#&gt; 6 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
 <span id="cb4-11"><a href="#cb4-11"></a><span class="co">#&gt;         data_type value</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt; 1    total_tested    72</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 2 total_confirmed     0</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt; 1    total_tested     4</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 2 total_confirmed    NA</span></span>
 <span id="cb4-14"><a href="#cb4-14"></a><span class="co">#&gt; 3        new_hosp    NA</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 4    current_hosp     0</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 5     current_icu     0</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 6    current_vent     0</span></span></code></pre></div>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 4    current_hosp    NA</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 5     current_icu    NA</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 6    current_vent    NA</span></span></code></pre></div>
 <div id="wide-format" class="section level3">
 <h3 class="hasAnchor">
 <a href="#wide-format" class="anchor"></a>Wide format</h3>
@@ -191,12 +191,12 @@
 <span id="cb5-7"><a href="#cb5-7"></a><span class="co">#&gt; # A tibble: 6 x 13</span></span>
 <span id="cb5-8"><a href="#cb5-8"></a><span class="co">#&gt;   date       location location_type location_code location_code_t… total_tested</span></span>
 <span id="cb5-9"><a href="#cb5-9"></a><span class="co">#&gt;   &lt;date&gt;     &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;                   &lt;int&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="co">#&gt; 1 2020-02-25 GE       Canton of Sw… CH.GE         gn_a1_code                 72</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="co">#&gt; 2 2020-02-25 TI       Canton of Sw… CH.TI         gn_a1_code                 NA</span></span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="co">#&gt; 3 2020-02-26 GE       Canton of Sw… CH.GE         gn_a1_code                178</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="co">#&gt; 4 2020-02-26 TI       Canton of Sw… CH.TI         gn_a1_code                 NA</span></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co">#&gt; 5 2020-02-27 BS       Canton of Sw… CH.BS         gn_a1_code                 NA</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="co">#&gt; 6 2020-02-27 FL       Principality… &lt;NA&gt;          gn_a1_code                  3</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="co">#&gt; 1 2020-01-24 GE       Canton of Sw… CH.GE         gn_a1_code                  4</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="co">#&gt; 2 2020-01-25 GE       Canton of Sw… CH.GE         gn_a1_code                  8</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co">#&gt; 3 2020-01-26 GE       Canton of Sw… CH.GE         gn_a1_code                 11</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="co">#&gt; 4 2020-01-27 GE       Canton of Sw… CH.GE         gn_a1_code                 18</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="co">#&gt; 5 2020-01-28 GE       Canton of Sw… CH.GE         gn_a1_code                 27</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="co">#&gt; 6 2020-01-29 GE       Canton of Sw… CH.GE         gn_a1_code                 54</span></span>
 <span id="cb5-16"><a href="#cb5-16"></a><span class="co">#&gt; # … with 7 more variables: total_confirmed &lt;int&gt;, new_hosp &lt;int&gt;,</span></span>
 <span id="cb5-17"><a href="#cb5-17"></a><span class="co">#&gt; #   current_hosp &lt;int&gt;, current_icu &lt;int&gt;, current_vent &lt;int&gt;,</span></span>
 <span id="cb5-18"><a href="#cb5-18"></a><span class="co">#&gt; #   total_recovered &lt;int&gt;, total_death &lt;int&gt;</span></span></code></pre></div>
