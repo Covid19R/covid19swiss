@@ -25535,6 +25535,14 @@
 2020-07-13,"GL","Canton of Switzerland","CH.GL","gn_a1_code","current_vent",NA
 2020-07-13,"GL","Canton of Switzerland","CH.GL","gn_a1_code","total_recovered",NA
 2020-07-13,"GL","Canton of Switzerland","CH.GL","gn_a1_code","total_death",13
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_tested",NA
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_confirmed",793
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","new_hosp",NA
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_hosp",5
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_icu",2
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","current_vent",NA
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_recovered",NA
+2020-07-13,"LU","Canton of Switzerland","CH.LU","gn_a1_code","total_death",20
 2020-07-13,"SG","Canton of Switzerland","CH.SG","gn_a1_code","total_tested",NA
 2020-07-13,"SG","Canton of Switzerland","CH.SG","gn_a1_code","total_confirmed",919
 2020-07-13,"SG","Canton of Switzerland","CH.SG","gn_a1_code","new_hosp",NA
