@@ -62,8 +62,8 @@ if(ncol(covid19swiss) != 7){
   stop("The number of columns is not align with the expected one (7)")
 } else if(nrow(covid19swiss) < 8200) {
   stop("The number of rows is not align with the expected one")
-} else if(min(covid19swiss$date) != as.Date("2020-02-25")){
-  stop("Stop, the starting date is not Feb 25")
+} else if(min(covid19swiss$date) != as.Date("2020-01-24")){
+  stop("Stop, the starting date is not Jan 24")
 }
 
 
@@ -75,8 +75,8 @@ if(ncol(git_df) != 7){
   stop("The number of columns is not align with the expected one (7)")
 } else if(nrow(git_df) < 8200) {
   stop("The number of rows is not align with the expected one")
-} else if(min(git_df$date) != as.Date("2020-02-25")){
-  stop("Stop, the starting date is not Feb 25")
+} else if(min(git_df$date) != as.Date("2020-01-24")){
+  stop("Stop, the starting date is not Jan 24")
 }
 
 if(nrow(covid19swiss) > nrow(git_df)){
