@@ -60,3 +60,19 @@ update_swiss_data <- function(){
 
 
 }
+
+
+get_info_covid19swiss <- function(){
+  data.frame(
+    data_set_name = "covid19swiss",
+    package_name = "covid19swiss",
+    function_to_get_data = "refresh_covid19swiss*",
+    data_details = "The 2019 Novel Coronavirus COVID-19 (2019-nCoV) Cases in Switzerland and Principality of Liechtenstein",
+    data_url = "http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/",
+    license_url = "MIT",
+    data_types = "total_tested, total_confirmed, new_hosp, current_hosp, current_icu, current_vent, total_recovered, total_death",
+    location_types = "Canton of Switzerland, Principality of Liechtenstein",
+    spatial_extent = "global",
+    TRUE
+  )
+}
