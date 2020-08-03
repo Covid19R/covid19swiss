@@ -3,7 +3,7 @@
 #' @description Checks if new data is available on the package dev version (Github).
 #' In case new data is available the function will enable the user the update the datasets
 #'
-#' @example
+#' @examples
 #' \dontrun{
 #'
 #' update_swiss_data()
