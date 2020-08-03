@@ -61,7 +61,20 @@ update_swiss_data <- function(){
 
 }
 
-
+#' Get information about the datasets provided by covid19swiss
+#'
+#' @description Returns information about the datasets in this package for
+#'   covid19R harvesting
+#'
+#' @return a data.frame of information about the datasets in this package
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'
+#' get_info_covid19swiss()
+#' }
+#'
 get_info_covid19swiss <- function(){
   data.frame(
     data_set_name = "covid19swiss",
