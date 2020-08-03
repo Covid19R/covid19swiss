@@ -108,32 +108,33 @@ data(covid19swiss)
 
 head(covid19swiss)
 #>         date location         location_type location_code location_code_type       data_type value
-#> 1 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code    total_tested    72
-#> 2 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code total_confirmed     0
-#> 3 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code        new_hosp    NA
-#> 4 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code    current_hosp     0
-#> 5 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code     current_icu     0
-#> 6 2020-02-25       GE Canton of Switzerland         CH.GE         gn_a1_code    current_vent     0
+#> 1 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code    total_tested     4
+#> 2 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code total_confirmed    NA
+#> 3 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code        new_hosp    NA
+#> 4 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code    current_hosp    NA
+#> 5 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code     current_icu    NA
+#> 6 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code    current_vent    NA
 ```
 
 ### Wide format
 
 ``` r
 library(tidyr)
+#> Warning: package 'tidyr' was built under R version 3.6.2
 
 covid19swiss_wide <- covid19swiss %>% 
   pivot_wider(names_from = data_type, values_from = value)
 
 head(covid19swiss_wide)
 #> # A tibble: 6 x 13
-#>   date       location location_type                 location_code location_code_type total_tested total_confirmed new_hosp current_hosp current_icu current_vent total_recovered total_death
-#>   <date>     <chr>    <chr>                         <chr>         <chr>                     <int>           <int>    <int>        <int>       <int>        <int>           <int>       <int>
-#> 1 2020-02-25 GE       Canton of Switzerland         CH.GE         gn_a1_code                   72               0       NA            0           0            0              NA          NA
-#> 2 2020-02-25 TI       Canton of Switzerland         CH.TI         gn_a1_code                   NA               1       NA           NA          NA           NA              NA          NA
-#> 3 2020-02-26 GE       Canton of Switzerland         CH.GE         gn_a1_code                  178               1       NA            1           0            0              NA          NA
-#> 4 2020-02-26 TI       Canton of Switzerland         CH.TI         gn_a1_code                   NA              NA       NA           NA          NA           NA              NA          NA
-#> 5 2020-02-27 BS       Canton of Switzerland         CH.BS         gn_a1_code                   NA               1       NA           NA          NA           NA              NA          NA
-#> 6 2020-02-27 FL       Principality of Liechtenstein <NA>          gn_a1_code                    3              NA       NA           NA          NA           NA              NA          NA
+#>   date       location location_type         location_code location_code_type total_tested total_confirmed new_hosp current_hosp current_icu current_vent total_recovered total_death
+#>   <date>     <chr>    <chr>                 <chr>         <chr>                     <int>           <int>    <int>        <int>       <int>        <int>           <int>       <int>
+#> 1 2020-01-24 GE       Canton of Switzerland CH.GE         gn_a1_code                    4              NA       NA           NA          NA           NA              NA          NA
+#> 2 2020-01-25 GE       Canton of Switzerland CH.GE         gn_a1_code                    8              NA       NA           NA          NA           NA              NA          NA
+#> 3 2020-01-26 GE       Canton of Switzerland CH.GE         gn_a1_code                   11              NA       NA           NA          NA           NA              NA          NA
+#> 4 2020-01-27 GE       Canton of Switzerland CH.GE         gn_a1_code                   18              NA       NA           NA          NA           NA              NA          NA
+#> 5 2020-01-28 GE       Canton of Switzerland CH.GE         gn_a1_code                   27              NA       NA           NA          NA           NA              NA          NA
+#> 6 2020-01-29 GE       Canton of Switzerland CH.GE         gn_a1_code                   54              NA       NA           NA          NA           NA              NA          NA
 ```
 
 ## Missing values

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# covid19swiss
+# covid19swiss 
 
 <!-- badges: start -->
 [![build](https://github.com/covid19r/covid19swiss/workflows/build/badge.svg?branch=master)](https://github.com/covid19r/covid19swiss/actions?query=workflow%3Abuild)
