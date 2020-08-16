@@ -1,11 +1,11 @@
-name: Data Refresh Dev
+name: covid19swiss data refresh
 
 on: 
   schedule:
-    - cron:  '0 */4 * * *'
+    - cron:  '30 */4 * * *'
 jobs:
   data_refresh_dev:
-    name: coronavirus dataset refresh dev
+    name: covid19swiss dataset refresh dev
     runs-on: ubuntu-18.04 
     container: 
      image:  rkrispin/covid19swiss:dev
@@ -17,7 +17,7 @@ jobs:
       - name: Refresh the data
         run: bash ./data_raw/data_refresh.sh
   data_refresh_master:
-    name: coronavirus dataset refresh master
+    name: covid19swiss dataset refresh master
     runs-on: ubuntu-18.04 
     container: 
      image:  rkrispin/covid19swiss:prod
