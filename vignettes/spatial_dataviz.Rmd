@@ -88,7 +88,7 @@ Using the swiss_df object we created above, it is straightforward to create a ch
 ```{r }
 library(mapview)
 
-mapview(swiss_df, zcol = "total_confirmed")
+mapview(swiss_df, zcol = "cases_total")
 ```
 
 The `col.regions` argument allows you to set the color palette. For instance, we can use the `plasma` palette from the **virdisLight** package to plot total death by canton:
@@ -96,7 +96,7 @@ The `col.regions` argument allows you to set the color palette. For instance, we
 ```{r}
 library(viridisLite)
 
-mapview(swiss_df, zcol = "total_death", col.regions = plasma)
+mapview(swiss_df, zcol = "deaths_total", col.regions = plasma)
 ```
 
 Additional customization options can be found on the mapview package [site](https://r-spatial.github.io/mapview/index.html)
@@ -108,7 +108,7 @@ Likewise, we can use the **ggplot2** package to create a choropleth map with the
 ```{r}
 library(ggplot2)
 
-ggplot(data = swiss_df, aes(fill = `total_confirmed`)) + 
+ggplot(data = swiss_df, aes(fill = `cases_total`)) + 
   geom_sf() + 
   scale_fill_viridis_b()
 ```
@@ -117,7 +117,7 @@ Customizations of the plot color palette can be done with the `scale_fill_viridi
 
 
 ```{r}
-ggplot(data = swiss_df, aes(fill = `total_confirmed`)) + 
+ggplot(data = swiss_df, aes(fill = `cases_total`)) + 
   geom_sf() + 
     scale_fill_viridis_b(option = "A",
                        begin = 0.2,
