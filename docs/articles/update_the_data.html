@@ -98,13 +98,13 @@
     
 <p>While the CRAN version of the package is updated once every month or two, the Github (Dev) version is updating on a daily bases. The following options allow you to keep the data updated with the ones available on the Dev version:</p>
 <ul>
-<li>Use the update_swiss_data function</li>
-<li>Read directly from the package repo a csv format of the data</li>
+<li>Reinstall the dev package (if new data is available) by using the <code>update_swiss_data</code> function</li>
+<li>Read directly from the package repo a csv format of the data with the <code>refresh_covid19swiss</code> function</li>
 </ul>
 <div id="the-update_swiss_data-function" class="section level3">
 <h3 class="hasAnchor">
 <a href="#the-update_swiss_data-function" class="anchor"></a>The update_swiss_data function</h3>
-<p>The update_swiss_data function enables to keep the installed version updated with the data available on Github. The function compared between the dataset on the installed version and the ones on the Dev version:</p>
+<p>The <code>update_swiss_data</code> function enables to keep the installed version updated with the data available on Github. The function compared between the dataset on the installed version and the ones on the Dev version:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(covid19swiss)</span>
 <span id="cb1-2"><a href="#cb1-2"></a></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="kw"><a href="../reference/update_swiss_data.html">update_swiss_data</a></span>()</span></code></pre></div>
@@ -119,36 +119,24 @@
 <h3 class="hasAnchor">
 <a href="#reading-the-data-from-csv-version" class="anchor"></a>Reading the data from CSV version</h3>
 <p>Alternatively, you can read and load the data directly from the package repository, using the csv version:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>swiss_df &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/read.table">read.csv</a></span>(<span class="st">"https://raw.githubusercontent.com/Covid19R/covid19swiss/master/csv/covid19swiss.csv"</span>,</span>
-<span id="cb4-2"><a href="#cb4-2"></a>                     <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(swiss_df)</span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt;         date location         location_type location_code location_code_type</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt; 1 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#&gt; 2 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt; 3 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co">#&gt; 4 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="co">#&gt; 5 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="co">#&gt; 6 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt;      data_type value</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 1 tested_total     4</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co">#&gt; 2  cases_total    NA</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 3     hosp_new    NA</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 4 hosp_current    NA</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 5  icu_current    NA</span></span>
-<span id="cb4-18"><a href="#cb4-18"></a><span class="co">#&gt; 6 vent_current    NA</span></span></code></pre></div>
-<p>The main difference between the first method (the <code>update_swiss_data</code> function) and the second method (reading a CSV format of the data) is that the date field on the last method is not formated as a Date object. A quick reformating can fix it:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>swiss_df<span class="op">$</span>date &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/as.Date">as.Date</a></span>(swiss_df<span class="op">$</span>date)</span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(swiss_df)</span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="co">#&gt; 'data.frame':    32088 obs. of  7 variables:</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="co">#&gt;  $ date              : Date, format: "2020-01-24" "2020-01-24" ...</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co">#&gt;  $ location          : chr  "GE" "GE" "GE" "GE" ...</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co">#&gt;  $ location_type     : chr  "Canton of Switzerland" "Canton of Switzerland" "Canton of Switzerland" "Canton of Switzerland" ...</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="co">#&gt;  $ location_code     : chr  "CH.GE" "CH.GE" "CH.GE" "CH.GE" ...</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="co">#&gt;  $ location_code_type: chr  "gn_a1_code" "gn_a1_code" "gn_a1_code" "gn_a1_code" ...</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="co">#&gt;  $ data_type         : chr  "tested_total" "cases_total" "hosp_new" "hosp_current" ...</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="co">#&gt;  $ value             : int  4 NA NA NA NA NA NA NA 8 NA ...</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>swiss_df &lt;-<span class="st"> </span><span class="kw"><a href="../reference/refresh_covid19swiss.html">refresh_covid19swiss</a></span>()</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(swiss_df)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt;         date location         location_type location_code location_code_type</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt; 1 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt; 2 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#&gt; 3 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt; 4 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">#&gt; 5 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">#&gt; 6 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co">#&gt;      data_type value</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt; 1 tested_total     4</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 2  cases_total    NA</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="co">#&gt; 3     hosp_new    NA</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 4 hosp_current    NA</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 5  icu_current    NA</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 6 vent_current    NA</span></span></code></pre></div>
+<p>The main difference between the first method (the <code>update_swiss_data</code> function) and the second method (reading a CSV format of the data) is that on the first method the data will be available on future sessions. On the other hand, on the second method (with the <code>refresh_covid19swiss</code> function), the data is loaded as object to the environment.</p>
 </div>
   </div>
 
