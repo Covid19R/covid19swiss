@@ -13,16 +13,19 @@ pkg_list <- c("dplyr",
               "reactable",
               "leaflet",
               "rnaturalearth",
-              "rnaturalearthhires",
               "mapview",
               "ggplot2",
               "viridisLite")
 
+
 install.packages(pkgs = pkg_list, repos = "https://cran.rstudio.com/")
+
+# Installing the "rnaturalearthhires" package
+install.packages("rnaturalearthhires", repos = "http://packages.ropensci.org", type = "source")
 
 fail <- FALSE
 
-for(i in pkg_list){
+for(i in c(pkg_list, "rnaturalearthhires")){
 
   if(i %in% rownames(installed.packages())){
     cat(i, "...OK\n")
