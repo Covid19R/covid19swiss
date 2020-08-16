@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Changelog • covid19swiss</title>
+<title>Refresh the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Dataset in the Covid19R Project Format — refresh_covid19swiss • covid19swiss</title>
 
 
 <!-- jquery -->
@@ -33,7 +33,9 @@
 
 
 
-<meta property="og:title" content="Changelog" />
+<meta property="og:title" content="Refresh the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Dataset in the Covid19R Project Format — refresh_covid19swiss" />
+<meta property="og:description" content="aily summary of the Coronavirus (COVID-19) pandemic cases in Switzerland by Canton" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -51,7 +53,7 @@
   </head>
 
   <body>
-    <div class="container template-news">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -120,40 +122,41 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Changelog <small></small></h1>
-      <small>Source: <a href='https://github.com/Covid19R/covid19swiss/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
+    <h1>Refresh the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Dataset in the Covid19R Project Format</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Covid19R/covid19swiss/blob/master/R/data_refresh.R'><code>R/data_refresh.R</code></a></small>
+    <div class="hidden name"><code>refresh_covid19swiss.Rd</code></div>
     </div>
 
-    <div id="covid19swiss-010" class="section level1">
-<h1 class="page-header">
-<a href="#covid19swiss-010" class="anchor"></a>covid19swiss 0.1.0</h1>
-<ul>
-<li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
-<li>Created the following vignettes:
-<ul>
-<li><a href="https://covid19r.github.io/covid19swiss/articles/intro_covid19swiss.html">Introduction to the covid19swiss Dataset</a></li>
-<li><a href="https://covid19r.github.io/covid19swiss/articles/update_the_data.html">Updating the covid19swiss Dataset</a></li>
-<li>
-<a href="https://covid19r.github.io/covid19swiss/articles/spatial_dataviz.html">Geospatial Visualization of Switzerland Cantons</a> (non CRAN vignette)</li>
-</ul>
-</li>
-<li>Created a package <a href="https://covid19r.github.io/covid19swiss/">site</a>
-</li>
-<li>Added the <code>update_swiss_data</code> function to keep the installed version updated with the Dev version</li>
-<li>Added the <code>refresh_covid19swiss</code> and <code>get_info_covid19swiss</code> functions to incorporate the data in the <a href="https://github.com/Covid19R/covid19R">covid19R</a> package</li>
-</ul>
-</div>
-  </div>
+    <div class="ref-description">
+    <p>aily summary of the Coronavirus (COVID-19) pandemic cases in Switzerland by Canton</p>
+    </div>
 
+    <pre class="usage"><span class='fu'>refresh_covid19swiss</span>()</pre>
+
+
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>Specialist Unit for Open Government Data Canton of Zurich <a href='http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/'>website</a></p>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>A data.frame object</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+<span class='co'># update the data</span>
+<span class='no'>covid19_swiss</span> <span class='kw'>&lt;-</span> <span class='fu'>refresh_covid19swiss</span>()
+<span class='co'># }</span><div class='input'>
+</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <div id="tocnav">
-      <h2>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="#covid19swiss-010">0.1.0</a></li>
-      </ul>
-    </div>
-  </div>
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#source">Source</a></li>
+      <li><a href="#value">Value</a></li>
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
+  </div>
 </div>
 
       <footer>
