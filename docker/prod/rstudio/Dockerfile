@@ -1,4 +1,4 @@
-FROM rkrispin/covid19swiss:dev
+FROM rkrispin/covid19swiss:prod
 
 ARG RSTUDIO_VERSION
 #ENV RSTUDIO_VERSION=${RSTUDIO_VERSION:-1.1.463}
