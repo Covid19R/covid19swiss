@@ -9,8 +9,13 @@ pkg_list <- c("dplyr",
               "rmarkdown",
               "flexdashboard",
               "tidyr",
+              "plotly",
+              "reactable",
               "leaflet",
-              "leafpop")
+              "rnaturalearth",
+              "mapview",
+              "ggplot2",
+              "viridisLite")
 
 install.packages(pkgs = pkg_list, repos = "https://cran.rstudio.com/")
 
@@ -24,7 +29,7 @@ for(i in pkg_list){
     cat(i, "...Fail\n")
     fail <- TRUE
   }
-  
+
   if(fail){
     stop("Fail to install some package/s")
   }
