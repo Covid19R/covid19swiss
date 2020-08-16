@@ -95,7 +95,9 @@
 <a href="#covid19swiss" class="anchor"></a>covid19swiss</h1></div>
 <!-- badges: start -->
 
-<p>The covid19swiss R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Switzerland cantons and the Principality of Liechtenstein (FL). The <code>covid19swiss</code> dataset includes the following fields:</p>
+<p>The covid19swiss R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Switzerland cantons and the Principality of Liechtenstein (FL). The package is following the data structure of the <a href="https://covid19r.github.io/documentation/data-format-standard.html">Covid19R project</a>.</p>
+<p><img src="reference/figures/swiss_map.png" width="100%" align="center"></p>
+<p>The <code>covid19swiss</code> dataset includes the following fields:</p>
 <ul>
 <li>
 <code>date</code> - the timestamp of the case, a <code>Date</code> object</li>
@@ -116,21 +118,21 @@
 <p>Where the available <code>data_type</code> field includes the following cases:</p>
 <ul>
 <li>
-<code>total_tested</code> - number of tests performed as of the date</li>
+<code>tested_total</code> - cumulative number of tests performed as of the date</li>
 <li>
-<code>total_confirmed</code> - number of positive cases as of the date</li>
+<code>cases_total</code> - cumulative confirmed Covid-19 cases as of the current date</li>
 <li>
-<code>new_hosp</code> - new hospitalizations with respect to the previously reported date</li>
+<code>hosp_new</code> - new hospitalizations on the current date</li>
 <li>
-<code>current_hosp</code> - number of hospitalized patients as of the current date</li>
+<code>hosp_current</code> - current number of hospitalized patients as of the current date</li>
 <li>
-<code>current_icu</code> - number of hospitalized patients in ICUs as of the current date</li>
+<code>icu_current</code> - number of hospitalized patients in ICUs as of the current date</li>
 <li>
-<code>current_vent</code> - number of hospitalized patients requiring ventilation as of the current date</li>
+<code>vent_current</code> - number of hospitalized patients requiring ventilation as of the current date</li>
 <li>
-<code>total_recovered</code> - total number of patients recovered as of the current date</li>
+<code>recovered_total</code> - cumulative number of patients recovered as of the current date</li>
 <li>
-<code>total_death</code> - total number of death as of the current date</li>
+<code>deaths_total</code> - cumulative deaths due to Covid-19 as of the current date</li>
 </ul>
 <p>More information can be found the following vignettes:</p>
 <ul>
@@ -172,34 +174,35 @@
 <span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt; 4 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
 <span id="cb4-9"><a href="#cb4-9"></a><span class="co">#&gt; 5 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
 <span id="cb4-10"><a href="#cb4-10"></a><span class="co">#&gt; 6 2020-01-24       GE Canton of Switzerland         CH.GE         gn_a1_code</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="co">#&gt;         data_type value</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt; 1    total_tested     4</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 2 total_confirmed    NA</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co">#&gt; 3        new_hosp    NA</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 4    current_hosp    NA</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 5     current_icu    NA</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 6    current_vent    NA</span></span></code></pre></div>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co">#&gt;      data_type value</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#&gt; 1 tested_total     4</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#&gt; 2  cases_total    NA</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="co">#&gt; 3     hosp_new    NA</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="co">#&gt; 4 hosp_current    NA</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#&gt; 5  icu_current    NA</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#&gt; 6 vent_current    NA</span></span></code></pre></div>
 <div id="wide-format" class="section level3">
 <h3 class="hasAnchor">
 <a href="#wide-format" class="anchor"></a>Wide format</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(tidyr)</span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a>covid19swiss_wide &lt;-<span class="st"> </span>covid19swiss <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="st">  </span><span class="kw"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider</a></span>(<span class="dt">names_from =</span> data_type, <span class="dt">values_from =</span> value)</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(covid19swiss_wide)</span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co">#&gt; # A tibble: 6 x 13</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="co">#&gt;   date       location location_type location_code location_code_t… total_tested</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="co">#&gt;   &lt;date&gt;     &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;                   &lt;int&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="co">#&gt; 1 2020-01-24 GE       Canton of Sw… CH.GE         gn_a1_code                  4</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="co">#&gt; 2 2020-01-25 GE       Canton of Sw… CH.GE         gn_a1_code                  8</span></span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="co">#&gt; 3 2020-01-26 GE       Canton of Sw… CH.GE         gn_a1_code                 11</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="co">#&gt; 4 2020-01-27 GE       Canton of Sw… CH.GE         gn_a1_code                 18</span></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co">#&gt; 5 2020-01-28 GE       Canton of Sw… CH.GE         gn_a1_code                 27</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="co">#&gt; 6 2020-01-29 GE       Canton of Sw… CH.GE         gn_a1_code                 54</span></span>
-<span id="cb5-16"><a href="#cb5-16"></a><span class="co">#&gt; # … with 7 more variables: total_confirmed &lt;int&gt;, new_hosp &lt;int&gt;,</span></span>
-<span id="cb5-17"><a href="#cb5-17"></a><span class="co">#&gt; #   current_hosp &lt;int&gt;, current_icu &lt;int&gt;, current_vent &lt;int&gt;,</span></span>
-<span id="cb5-18"><a href="#cb5-18"></a><span class="co">#&gt; #   total_recovered &lt;int&gt;, total_death &lt;int&gt;</span></span></code></pre></div>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co">#&gt; Warning: package 'tidyr' was built under R version 3.6.2</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a>covid19swiss_wide &lt;-<span class="st"> </span>covid19swiss <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="st">  </span><span class="kw"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider</a></span>(<span class="dt">names_from =</span> data_type, <span class="dt">values_from =</span> value)</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(covid19swiss_wide)</span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co">#&gt; # A tibble: 6 x 13</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="co">#&gt;   date       location location_type location_code location_code_t… tested_total</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="co">#&gt;   &lt;date&gt;     &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;                   &lt;int&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="co">#&gt; 1 2020-01-24 GE       Canton of Sw… CH.GE         gn_a1_code                  4</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co">#&gt; 2 2020-01-25 GE       Canton of Sw… CH.GE         gn_a1_code                  8</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="co">#&gt; 3 2020-01-26 GE       Canton of Sw… CH.GE         gn_a1_code                 11</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="co">#&gt; 4 2020-01-27 GE       Canton of Sw… CH.GE         gn_a1_code                 18</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="co">#&gt; 5 2020-01-28 GE       Canton of Sw… CH.GE         gn_a1_code                 27</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a><span class="co">#&gt; 6 2020-01-29 GE       Canton of Sw… CH.GE         gn_a1_code                 54</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="co">#&gt; # … with 7 more variables: cases_total &lt;int&gt;, hosp_new &lt;int&gt;,</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a><span class="co">#&gt; #   hosp_current &lt;int&gt;, icu_current &lt;int&gt;, vent_current &lt;int&gt;,</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a><span class="co">#&gt; #   recovered_total &lt;int&gt;, deaths_total &lt;int&gt;</span></span></code></pre></div>
 </div>
 </div>
 <div id="missing-values" class="section level2">

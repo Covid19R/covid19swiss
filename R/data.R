@@ -23,9 +23,6 @@
 #'
 #' value - the number of cases corresponding to the date and data_type fields
 #'
-#'
-#'
-#'
 #' Where the available data_type field includes the following cases:
 #'
 #' total_tested - number of tests performed as of the date

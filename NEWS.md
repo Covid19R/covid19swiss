@@ -7,3 +7,4 @@
   + [Geospatial Visualization of Switzerland Cantons](https://covid19r.github.io/covid19swiss/articles/spatial_dataviz.html) (non CRAN vignette)
 * Created a package [site](https://covid19r.github.io/covid19swiss/) 
 * Added the `update_swiss_data` function to keep the installed version updated with the Dev version
+* Added the `refresh_covid19swiss` and `get_info_covid19swiss` functions to incorporate the data in the [covid19R](https://github.com/Covid19R/covid19R) package
