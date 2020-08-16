@@ -89,3 +89,36 @@ get_info_covid19swiss <- function(){
     TRUE
   )
 }
+
+
+#' Refresh the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Dataset in the Covid19R Project Format
+#'
+#' aily summary of the Coronavirus (COVID-19) pandemic cases in Switzerland by Canton
+#' @export
+#' @return A data.frame object
+#' @source Specialist Unit for Open Government Data Canton of Zurich \href{http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/}{website}
+#
+#' @examples
+#' \dontrun{
+#' # update the data
+#' covid19_swiss <- refresh_covid19swiss()
+#' }
+#'
+
+refresh_covid19swiss <- function(){
+  df <- NULL
+  df <- utils::read.csv("https://raw.githubusercontent.com/Covid19R/covid19swiss/master/csv/covid19swiss.csv",
+                            stringsAsFactors = FALSE)
+
+  # Unit tests
+  if(nrow(df) == 0 || is.null(df)){
+    stop("The imported object is empty, please check you connection")
+  } else if(ncol(df) != 7){
+    stop("The structure of the imported object is not valid")
+  } else if(!all(names(df) %in% c("date", "location", "location_type", "location_code", "location_code_type", "data_type", "value"))){
+    stop("The names of the imported object are not valid")
+  }
+
+  df$date <- as.Date(df$date)
+  return(df)
+}
