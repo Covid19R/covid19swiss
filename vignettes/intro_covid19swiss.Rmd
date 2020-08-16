@@ -24,9 +24,9 @@ The covid19swiss R package provides a tidy format dataset of the 2019 Novel Coro
 The `covid19swiss` dataset includes the following fields:
 
 * `date` - the timestamp of the case, a `Date` object
-* `location` - the cantons of Switzerland and Principality of Liechtenstein (FL) abbreviation code
+* `location` - the **Cantons of Switzerland** and **the Principality of Liechtenstein** (FL) abbreviation code
 * `location_type` - description of the location, either **Canton of Switzerland** or **the Principality of echtenstein**
-* `location_code` - a canton index code for merging geometry data from the **rnaturalearth** package, ailable only for Switzerland cantons
+* `location_code` - a canton index code for merging geometry data from the rnaturalearth package, ailable only for Switzerland cantons
 * `location_code_type` - the name of code in the **rnaturalearth** package for Switzerland map
 * `data_type` - the type of case
 * `value` - the number of cases corresponding to the `date` and `data_type` fields
@@ -34,14 +34,14 @@ The `covid19swiss` dataset includes the following fields:
 
 Where the available `data_type` field includes the following cases:
 
-* `total_tested` - number of tests performed as of the date
-* `total_confirmed` - number of positive cases as of the date
-* `new_hosp` - new hospitalizations with respect to the previously reported date
-* `current_hosp` - number of hospitalized patients as of the current date
-* `current_icu` - number of hospitalized patients in ICUs as of the current date
-* `current_vent` - number of hospitalized patients requiring ventilation as of the current date
-* `total_recovered` - total number of patients recovered as of the current date
-* `total_death` - total number of death as of the current date
+* `tested_total` - cumulative number of tests performed as of the date
+* `cases_total` - cumulative confirmed Covid-19 cases as of the current date
+* `hosp_new` - new hospitalizations on the current date
+* `hosp_current` - current number of hospitalized patients as of the current date
+* `icu_current` - number of hospitalized patients in ICUs as of the current date
+* `vent_current` - number of hospitalized patients requiring ventilation as of the current date
+* `recovered_total` - cumulative number of patients recovered as of the current date
+* `deaths_total` - cumulative deaths due to Covid-19 as of the current date
 
 
 The data organized in a long format:
@@ -78,10 +78,10 @@ library(dplyr)
 
 covid19swiss %>%
   filter(date == as.Date("2020-04-10"),
-         data_type %in% c("total_confirmed", "total_recovered", "total_death")) %>%
+         data_type %in% c("cases_total", "recovered_total", "death_total")) %>%
   select(location, value, data_type) %>%
   pivot_wider(names_from = data_type, values_from = value) %>%
-  arrange(-total_confirmed)
+  arrange(-cases_total)
 ```
 
 **Note:** some fields, such as `total_recovered` or `total_tested`, are not available for some cantons and marked as missing values (i.e., `NA`)
@@ -101,9 +101,9 @@ covid19swiss %>% dplyr::filter(location == "GE",
                                date == as.Date("2020-04-10")) %>%
   dplyr::select(data_type, value) %>%
   tidyr::pivot_wider(names_from = data_type, values_from = value) %>%
-  dplyr::mutate(positive_tested = round(100 * total_confirmed / total_tested, 2),
-                death_rate = round(100 * total_death / total_confirmed, 2),
-                recovery_rate = round(100 * total_recovered / total_confirmed, 2)) %>%
+  dplyr::mutate(positive_tested = round(100 * cases_total / tested_total, 2),
+                death_rate = round(100 * deaths_total / cases_total, 2),
+                recovery_rate = round(100 * recovered_total / cases_total, 2)) %>%
   dplyr::select(positive_tested, recovery_rate, death_rate) 
 ```
 
