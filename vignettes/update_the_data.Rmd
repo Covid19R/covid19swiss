@@ -12,16 +12,17 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+library(covid19swiss)
 ```
 
 While the CRAN version of the package is updated once every month or two, the Github (Dev) version is updating on a daily bases. The following options allow you to keep the data updated with the ones available on the Dev version:
 
-* Use the update_swiss_data function
-* Read directly from the package repo a csv format of the data
+* Reinstall the dev package (if new data is available) by using the `update_swiss_data` function 
+* Read directly from the package repo a csv format of the data with the `refresh_covid19swiss` function
 
 ### The update_swiss_data function
 
-The update_swiss_data function enables to keep the installed version updated with the data available on Github. The function compared between the dataset on the installed version and the ones on the Dev version:
+The `update_swiss_data` function enables to keep the installed version updated with the data available on Github. The function compared between the dataset on the installed version and the ones on the Dev version:
 
 ``` r 
 library(covid19swiss)
@@ -51,19 +52,13 @@ In order to make the new data available, you will have to restart your R session
 Alternatively, you can read and load the data directly from the package repository, using the csv version:
 
 ```{r}
-swiss_df <- read.csv("https://raw.githubusercontent.com/Covid19R/covid19swiss/master/csv/covid19swiss.csv",
-                     stringsAsFactors = FALSE)
+swiss_df <- refresh_covid19swiss()
 
 head(swiss_df)
 ```
 
-The main difference between the first method (the `update_swiss_data` function) and the second method (reading a CSV format of the data) is that the date field on the last method is not formated as a Date object. A quick reformating can fix it:
+The main difference between the first method (the `update_swiss_data` function) and the second method (reading a CSV format of the data) is that on the first method the data will be available on future sessions. On the other hand, on the second method (with the `refresh_covid19swiss` function), the data is loaded as object to the environment.
 
-```{r}
-swiss_df$date <- as.Date(swiss_df$date)
-
-str(swiss_df)
-```
 
 
 
