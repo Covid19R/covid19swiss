@@ -47,7 +47,7 @@ In order to make the new data available, you will have to restart your R session
 **Note:** As frequent changes may occur on the raw data structure (such as new fields, retroactive updates in the data, etc.), the Dev version dataset may change accordingly. 
 
 
-### Reading the data from CSV version
+### Reading the data from the CSV version
 
 Alternatively, you can read and load the data directly from the package repository, using the csv version:
 
