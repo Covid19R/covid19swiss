@@ -13,6 +13,8 @@ pkg_list <- c("dplyr",
               "reactable",
               "leaflet",
               "rnaturalearth",
+              "sp",
+              "rgeos",
               "mapview",
               "ggplot2",
               "viridisLite")
