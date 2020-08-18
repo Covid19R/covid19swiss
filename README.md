@@ -73,9 +73,7 @@ multiple sources and make this data available\!
 
 ## Installation
 
-You can install the released version of covid19swiss from
-[CRAN](https://cran.r-project.org/web/packages/covid19swiss/index.html)
-with:
+You can install the released version of covid19swiss from CRAN with:
 
 ``` r
 install.packages("covid19swiss")
