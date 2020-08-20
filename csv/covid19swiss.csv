@@ -32847,6 +32847,14 @@
 2020-08-19,"GL","Canton of Switzerland","CH.GL","gn_a1_code","vent_current",NA
 2020-08-19,"GL","Canton of Switzerland","CH.GL","gn_a1_code","recovered_total",NA
 2020-08-19,"GL","Canton of Switzerland","CH.GL","gn_a1_code","deaths_total",13
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","tested_total",NA
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","cases_total",964
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_new",NA
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_current",2
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","icu_current",0
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","vent_current",0
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","recovered_total",NA
+2020-08-19,"GR","Canton of Switzerland","CH.GR","gn_a1_code","deaths_total",50
 2020-08-19,"JU","Canton of Switzerland","CH.JU","gn_a1_code","tested_total",NA
 2020-08-19,"JU","Canton of Switzerland","CH.JU","gn_a1_code","cases_total",262
 2020-08-19,"JU","Canton of Switzerland","CH.JU","gn_a1_code","hosp_new",NA
