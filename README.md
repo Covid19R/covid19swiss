@@ -65,8 +65,8 @@ More information can be found the following vignettes:
     (non CRAN vignette)
 
 Data source: [Specialist Unit for Open Government Data Canton of
-Zurich](http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html),
-raw data is available on the following
+Zurich](https://www.zh.ch/de/politik-staat/opendata.html), raw data is
+available on the following
 [repository](https://github.com/openZH/covid_19). Special thanks for all
 the people that collaborate and contribute to pull the data from
 multiple sources and make this data available\!
