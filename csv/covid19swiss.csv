@@ -34751,3 +34751,11 @@
 2020-08-29,"BS","Canton of Switzerland","CH.BS","gn_a1_code","vent_current",NA
 2020-08-29,"BS","Canton of Switzerland","CH.BS","gn_a1_code","recovered_total",1106
 2020-08-29,"BS","Canton of Switzerland","CH.BS","gn_a1_code","deaths_total",54
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","tested_total",NA
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","cases_total",5995
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","hosp_new",NA
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","hosp_current",19
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","icu_current",NA
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","vent_current",5
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","recovered_total",NA
+2020-08-29,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","deaths_total",141
