@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: person("Rami", "Krispin", email = "rami.krispin@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Rami Krispin <rami.krispin@gmail.com>
-Description: Provides a daily summary of the Coronavirus (COVID-19) cases in Switzerland cantons and Principality of Liechtenstein.
+Description: Provides a daily summary of the Coronavirus (COVID-19) cases in Switzerland cantons and Principality of Liechtenstein. Data source: Specialist Unit for Open Government Data Canton of Zurich <https://www.zh.ch/de/politik-staat/opendata.html>
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
