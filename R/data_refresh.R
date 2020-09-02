@@ -96,7 +96,7 @@ get_info_covid19swiss <- function(){
 #' aily summary of the Coronavirus (COVID-19) pandemic cases in Switzerland by Canton
 #' @export
 #' @return A data.frame object
-#' @source Specialist Unit for Open Government Data Canton of Zurich \href{http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/}{website}
+#' @source Specialist Unit for Open Government Data Canton of Zurich \href{https://www.zh.ch/de/politik-staat/opendata.html}{website}
 #
 #' @examples
 #' \dontrun{

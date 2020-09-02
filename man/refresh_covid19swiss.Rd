@@ -4,7 +4,7 @@
 \alias{refresh_covid19swiss}
 \title{Refresh the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Dataset in the Covid19R Project Format}
 \source{
-Specialist Unit for Open Government Data Canton of Zurich \href{http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/}{website}
+Specialist Unit for Open Government Data Canton of Zurich \href{https://www.zh.ch/de/politik-staat/opendata.html}{website}
 }
 \usage{
 refresh_covid19swiss()

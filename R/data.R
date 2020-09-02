@@ -4,7 +4,7 @@
 #'
 #'
 #' @format A data.frame object
-#' @source Specialist Unit for Open Government Data Canton of Zurich \href{http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/}{website}
+#' @source Specialist Unit for Open Government Data Canton of Zurich \href{https://www.zh.ch/de/politik-staat/opendata.html}{website}
 #' @keywords datasets coronavirus COVID19 Switzerland Canton Liechtenstein
 #' @details The dataset contains the daily summary of the Coronavirus pandemic cases in Switzerland and Principality of Liechtenstein.
 #' The data includes the following fields:

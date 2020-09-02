@@ -8,7 +8,7 @@
 A data.frame object
 }
 \source{
-Specialist Unit for Open Government Data Canton of Zurich \href{http://open.zh.ch/internet/justiz_inneres/ogd/de/daten.html/}{website}
+Specialist Unit for Open Government Data Canton of Zurich \href{https://www.zh.ch/de/politik-staat/opendata.html}{website}
 }
 \usage{
 covid19swiss
