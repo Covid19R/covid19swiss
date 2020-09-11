@@ -14,7 +14,7 @@ Returns information about the datasets in this package for
   covid19R harvesting
 }
 \examples{
-\dontrun{
+\donttest{
 
 get_info_covid19swiss()
 }

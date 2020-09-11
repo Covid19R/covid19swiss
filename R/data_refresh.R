@@ -4,7 +4,7 @@
 #' In case new data is available the function will enable the user the update the datasets
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #'
 #' update_swiss_data()
 #'
@@ -70,7 +70,7 @@ update_swiss_data <- function(){
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #'
 #' get_info_covid19swiss()
 #' }
@@ -99,7 +99,7 @@ get_info_covid19swiss <- function(){
 #' @source Specialist Unit for Open Government Data Canton of Zurich \href{https://www.zh.ch/de/politik-staat/opendata.html}{website}
 #
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' # update the data
 #' covid19_swiss <- refresh_covid19swiss()
 #' }

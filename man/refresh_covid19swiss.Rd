@@ -16,7 +16,7 @@ A data.frame object
 aily summary of the Coronavirus (COVID-19) pandemic cases in Switzerland by Canton
 }
 \examples{
-\dontrun{
+\donttest{
 # update the data
 covid19_swiss <- refresh_covid19swiss()
 }

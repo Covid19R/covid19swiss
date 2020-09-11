@@ -11,7 +11,7 @@ Checks if new data is available on the package dev version (Github).
 In case new data is available the function will enable the user the update the datasets
 }
 \examples{
-\dontrun{
+\donttest{
 
 update_swiss_data()
 
