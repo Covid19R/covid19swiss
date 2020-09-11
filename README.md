@@ -12,7 +12,7 @@
 MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub
 commit](https://img.shields.io/github/last-commit/covid19r/covid19swiss)](https://github.com/covid19r/covid19swiss/commit/master)
-<!-- badges: end -->
+<!-- badges: end  -->
 
 The covid19swiss R package provides a tidy format dataset of the 2019
 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Switzerland
@@ -124,7 +124,6 @@ head(covid19swiss)
 
 ``` r
 library(tidyr)
-#> Warning: package 'tidyr' was built under R version 3.6.2
 
 covid19swiss_wide <- covid19swiss %>% 
   pivot_wider(names_from = data_type, values_from = value)
