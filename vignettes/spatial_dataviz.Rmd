@@ -43,7 +43,7 @@ library(dplyr)
 library(tidyr)
 
 swiss_wide <- covid19swiss %>% filter(location != "FL", 
-                                      date == as.Date("2020-07-01")) %>%
+                                      date == as.Date("2020-09-08")) %>%
   pivot_wider(names_from = data_type, values_from = value) 
 
 head(swiss_wide)
