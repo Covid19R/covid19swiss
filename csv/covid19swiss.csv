@@ -37399,3 +37399,11 @@
 2020-09-11,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","vent_current",8
 2020-09-11,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","recovered_total",NA
 2020-09-11,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","deaths_total",143
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","tested_total",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","cases_total",2810
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","hosp_new",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","hosp_current",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","icu_current",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","vent_current",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","recovered_total",NA
+2020-09-12,"BE","Canton of Switzerland","CH.BE","gn_a1_code","deaths_total",99
