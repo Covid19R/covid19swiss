@@ -40047,6 +40047,14 @@
 2020-09-25,"VS","Canton of Switzerland","CH.VS","gn_a1_code","vent_current",0
 2020-09-25,"VS","Canton of Switzerland","CH.VS","gn_a1_code","recovered_total",325
 2020-09-25,"VS","Canton of Switzerland","CH.VS","gn_a1_code","deaths_total",156
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","tested_total",NA
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","cases_total",429
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","hosp_new",NA
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","hosp_current",3
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","icu_current",NA
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","vent_current",NA
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","recovered_total",397
+2020-09-25,"ZG","Canton of Switzerland","CH.ZG","gn_a1_code","deaths_total",9
 2020-09-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","tested_total",NA
 2020-09-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","cases_total",7675
 2020-09-25,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","hosp_new",NA
