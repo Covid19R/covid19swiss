@@ -43679,3 +43679,11 @@
 2020-10-11,"BS","Canton of Switzerland","CH.BS","gn_a1_code","vent_current",NA
 2020-10-11,"BS","Canton of Switzerland","CH.BS","gn_a1_code","recovered_total",1274
 2020-10-11,"BS","Canton of Switzerland","CH.BS","gn_a1_code","deaths_total",54
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","tested_total",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","cases_total",144
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","hosp_new",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","hosp_current",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","icu_current",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","vent_current",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","recovered_total",NA
+2020-10-11,"FL","Principality of Liechtenstein",NA,"gn_a1_code","deaths_total",1
