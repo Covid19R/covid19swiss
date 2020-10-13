@@ -43997,7 +43997,7 @@
 2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","hosp_current",18
 2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","icu_current",1
 2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","vent_current",NA
-2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","recovered_total",2530
+2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","recovered_total",NA
 2020-10-12,"AG","Canton of Switzerland","CH.AG","gn_a1_code","deaths_total",55
 2020-10-12,"AI","Canton of Switzerland","CH.AI","gn_a1_code","tested_total",NA
 2020-10-12,"AI","Canton of Switzerland","CH.AI","gn_a1_code","cases_total",73
@@ -44247,6 +44247,14 @@
 2020-10-13,"FL","Principality of Liechtenstein",NA,"gn_a1_code","vent_current",NA
 2020-10-13,"FL","Principality of Liechtenstein",NA,"gn_a1_code","recovered_total",NA
 2020-10-13,"FL","Principality of Liechtenstein",NA,"gn_a1_code","deaths_total",1
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","tested_total",NA
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","cases_total",3156
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","hosp_new",NA
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","hosp_current",13
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","icu_current",2
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","vent_current",NA
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","recovered_total",182
+2020-10-13,"FR","Canton of Switzerland","CH.FR","gn_a1_code","deaths_total",104
 2020-10-13,"GE","Canton of Switzerland","CH.GE","gn_a1_code","tested_total",NA
 2020-10-13,"GE","Canton of Switzerland","CH.GE","gn_a1_code","cases_total",NA
 2020-10-13,"GE","Canton of Switzerland","CH.GE","gn_a1_code","hosp_new",NA
