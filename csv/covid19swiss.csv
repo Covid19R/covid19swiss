@@ -46087,6 +46087,14 @@
 2020-10-22,"GL","Canton of Switzerland","CH.GL","gn_a1_code","vent_current",NA
 2020-10-22,"GL","Canton of Switzerland","CH.GL","gn_a1_code","recovered_total",NA
 2020-10-22,"GL","Canton of Switzerland","CH.GL","gn_a1_code","deaths_total",14
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","tested_total",NA
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","cases_total",1694
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_new",NA
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_current",13
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","icu_current",3
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","vent_current",3
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","recovered_total",NA
+2020-10-22,"GR","Canton of Switzerland","CH.GR","gn_a1_code","deaths_total",50
 2020-10-22,"LU","Canton of Switzerland","CH.LU","gn_a1_code","tested_total",NA
 2020-10-22,"LU","Canton of Switzerland","CH.LU","gn_a1_code","cases_total",2670
 2020-10-22,"LU","Canton of Switzerland","CH.LU","gn_a1_code","hosp_new",NA
@@ -46118,7 +46126,7 @@
 2020-10-22,"OW","Canton of Switzerland","CH.OW","gn_a1_code","icu_current",NA
 2020-10-22,"OW","Canton of Switzerland","CH.OW","gn_a1_code","vent_current",NA
 2020-10-22,"OW","Canton of Switzerland","CH.OW","gn_a1_code","recovered_total",NA
-2020-10-22,"OW","Canton of Switzerland","CH.OW","gn_a1_code","deaths_total",1
+2020-10-22,"OW","Canton of Switzerland","CH.OW","gn_a1_code","deaths_total",5
 2020-10-22,"SG","Canton of Switzerland","CH.SG","gn_a1_code","tested_total",NA
 2020-10-22,"SG","Canton of Switzerland","CH.SG","gn_a1_code","cases_total",NA
 2020-10-22,"SG","Canton of Switzerland","CH.SG","gn_a1_code","hosp_new",NA
