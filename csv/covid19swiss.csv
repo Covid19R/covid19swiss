@@ -46303,6 +46303,14 @@
 2020-10-23,"GR","Canton of Switzerland","CH.GR","gn_a1_code","vent_current",3
 2020-10-23,"GR","Canton of Switzerland","CH.GR","gn_a1_code","recovered_total",NA
 2020-10-23,"GR","Canton of Switzerland","CH.GR","gn_a1_code","deaths_total",50
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","tested_total",NA
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","cases_total",1167
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","hosp_new",NA
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","hosp_current",53
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","icu_current",2
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","vent_current",NA
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","recovered_total",NA
+2020-10-23,"JU","Canton of Switzerland","CH.JU","gn_a1_code","deaths_total",14
 2020-10-23,"LU","Canton of Switzerland","CH.LU","gn_a1_code","tested_total",NA
 2020-10-23,"LU","Canton of Switzerland","CH.LU","gn_a1_code","cases_total",2854
 2020-10-23,"LU","Canton of Switzerland","CH.LU","gn_a1_code","hosp_new",NA
@@ -46399,3 +46407,11 @@
 2020-10-23,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","vent_current",13
 2020-10-23,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","recovered_total",NA
 2020-10-23,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","deaths_total",157
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","tested_total",NA
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","cases_total",5584
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","hosp_new",NA
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","hosp_current",62
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","icu_current",5
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","vent_current",3
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","recovered_total",952
+2020-10-24,"TI","Canton of Switzerland","CH.TI","gn_a1_code","deaths_total",354
