@@ -47263,6 +47263,14 @@
 2020-10-28,"GL","Canton of Switzerland","CH.GL","gn_a1_code","vent_current",NA
 2020-10-28,"GL","Canton of Switzerland","CH.GL","gn_a1_code","recovered_total",NA
 2020-10-28,"GL","Canton of Switzerland","CH.GL","gn_a1_code","deaths_total",14
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","tested_total",NA
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","cases_total",2204
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_new",NA
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","hosp_current",36
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","icu_current",6
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","vent_current",6
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","recovered_total",NA
+2020-10-28,"GR","Canton of Switzerland","CH.GR","gn_a1_code","deaths_total",50
 2020-10-28,"LU","Canton of Switzerland","CH.LU","gn_a1_code","tested_total",NA
 2020-10-28,"LU","Canton of Switzerland","CH.LU","gn_a1_code","cases_total",3965
 2020-10-28,"LU","Canton of Switzerland","CH.LU","gn_a1_code","hosp_new",NA
