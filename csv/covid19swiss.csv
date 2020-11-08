@@ -49199,6 +49199,14 @@
 2020-11-06,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","vent_current",44
 2020-11-06,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","recovered_total",NA
 2020-11-06,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","deaths_total",210
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","tested_total",NA
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","cases_total",18632
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","hosp_new",NA
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","hosp_current",368
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","icu_current",NA
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","vent_current",NA
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","recovered_total",NA
+2020-11-07,"BE","Canton of Switzerland","CH.BE","gn_a1_code","deaths_total",168
 2020-11-07,"BL","Canton of Switzerland","CH.BL","gn_a1_code","tested_total",NA
 2020-11-07,"BL","Canton of Switzerland","CH.BL","gn_a1_code","cases_total",3739
 2020-11-07,"BL","Canton of Switzerland","CH.BL","gn_a1_code","hosp_new",NA
