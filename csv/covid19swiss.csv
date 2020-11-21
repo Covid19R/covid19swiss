@@ -52415,3 +52415,11 @@
 2020-11-20,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","vent_current",47
 2020-11-20,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","recovered_total",NA
 2020-11-20,"ZH","Canton of Switzerland","CH.ZH","gn_a1_code","deaths_total",308
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","tested_total",NA
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","cases_total",4614
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","hosp_new",NA
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","hosp_current",NA
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","icu_current",NA
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","vent_current",NA
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","recovered_total",3854
+2020-11-21,"SZ","Canton of Switzerland","CH.SZ","gn_a1_code","deaths_total",91
